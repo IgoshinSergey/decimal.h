@@ -15,7 +15,7 @@
 ## Сборка библиотеки
 
 ```bash
-git clone https://github.com/IgoshinSergey/decimal.h.git
+git clone https://github.com/IgoshinSergey/decimal.h.git && cd decimal.h/src/
 make s21_decimal.a # сборка библиотеки
 make test          # unit-тестирование
 make gcov_report   # отчет gcov в виде html страницы
