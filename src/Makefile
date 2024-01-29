@@ -36,6 +36,7 @@ test: clean s21_decimal.a
 s21_decimal.a: clean
 	@$(CC) -c $(CFLAGS) $(LIB_FILES) $(ADD_LIB)
 	@ar -rcs s21_decimal.a s21_*.o
+	@rm -rf *.o
 
 gcov_report: clean
 	@$(CC) $(CFLAGS) $(ASAN) $(GCOV_FLAGS) $(LIB_FILES) $(TEST_FILES) -o gcov_test $(ADD_LIB)
