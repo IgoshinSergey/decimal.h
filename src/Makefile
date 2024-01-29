@@ -4,7 +4,7 @@ ASAN=#-fsanitize=address -g
 GCOV_FLAGS=--coverage
 OS=$(shell uname -s)
 USERNAME=$(shell whoami)
-LIB_FILES=arithmetic/s21*.c comparison/s21*.c transformations/s21*.c another/s21*.c s21*.c
+LIB_FILES=arithmetic/s21*.c comparison/s21*.c converters/s21*.c another/s21*.c s21*.c
 TEST_FILES=unit_tests/*.c
 
 ifeq ($(OS), Linux)
