@@ -422,7 +422,6 @@ Suite *suite_add(void) {
   tcase_add_test(tcase, s21_add_test_22);
   tcase_add_test(tcase, s21_add_test_23);
   tcase_add_test(tcase, s21_add_test_24);
-
   tcase_add_test(tcase, s21_add_test_25);
   tcase_add_test(tcase, s21_add_test_26);
   tcase_add_test(tcase, s21_add_test_27);

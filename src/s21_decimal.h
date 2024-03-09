@@ -9,8 +9,14 @@
 #include <string.h>
 
 /*===== Limit Values =====*/
-#define DECIMAL_MAX (s21_decimal) {{ 0xffffffff, 0xffffffff, 0xffffffff, 0 }}
-#define DECIMAL_MIN (s21_decimal) {{ 0xffffffff, 0xffffffff, 0xffffffff, 0b1 << 31 }}
+#define DECIMAL_MAX                           \
+  (s21_decimal) {                             \
+    { 0xffffffff, 0xffffffff, 0xffffffff, 0 } \
+  }
+#define DECIMAL_MIN                                   \
+  (s21_decimal) {                                     \
+    { 0xffffffff, 0xffffffff, 0xffffffff, 0b1 << 31 } \
+  }
 
 typedef struct {
   unsigned bits[4];

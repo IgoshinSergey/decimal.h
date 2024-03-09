@@ -4,15 +4,25 @@
 #include "s21_decimal.h"
 
 #define DECIMAL_ZERO \
-  (s21_decimal){{ 0, 0, 0, 0 }}
-#define BIG_DEC_TEN \
-  (s21_big_decimal){{ 10, 0, 0, 0, 0, 0, 0, 0 }}
-#define BIG_DEC_FIVE \
-  (s21_big_decimal){{ 5, 0, 0, 0, 0, 0, 0, 0 }}
-#define BIG_DEC_TWO \
-  (s21_big_decimal){{ 2, 0, 0, 0, 0, 0, 0, 0 }}
-#define BIG_DEC_ONE \
-  (s21_big_decimal){{ 1, 0, 0, 0, 0, 0, 0, 0 }}
+  (s21_decimal) {    \
+    { 0, 0, 0, 0 }   \
+  }
+#define BIG_DEC_TEN             \
+  (s21_big_decimal) {           \
+    { 10, 0, 0, 0, 0, 0, 0, 0 } \
+  }
+#define BIG_DEC_FIVE           \
+  (s21_big_decimal) {          \
+    { 5, 0, 0, 0, 0, 0, 0, 0 } \
+  }
+#define BIG_DEC_TWO            \
+  (s21_big_decimal) {          \
+    { 2, 0, 0, 0, 0, 0, 0, 0 } \
+  }
+#define BIG_DEC_ONE            \
+  (s21_big_decimal) {          \
+    { 1, 0, 0, 0, 0, 0, 0, 0 } \
+  }
 #define MAX_FLOAT 79228162514264337593543950335.f
 #define MIN_FLOAT 1.e-28
 
@@ -56,7 +66,8 @@ void s21_mantissa_sub_big(s21_big_decimal value_1, s21_big_decimal value_2,
 s21_big_decimal s21_mantissa_div_big(s21_big_decimal value_1,
                                      s21_big_decimal value_2,
                                      s21_big_decimal *result);
-void s21_mantissa_mul_big(s21_big_decimal value_1, s21_big_decimal value_2, s21_big_decimal *result);
+void s21_mantissa_mul_big(s21_big_decimal value_1, s21_big_decimal value_2,
+                          s21_big_decimal *result);
 void s21_mul_ten_big(s21_big_decimal *value);
 
 /*Вспомогательные функции для s21_float_to_decimal*/
